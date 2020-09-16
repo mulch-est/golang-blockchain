@@ -21,3 +21,9 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
  `reindexutxo` ~Rebuilds the UTXO set
  
  `startnode -miner <ADDRESS>` ~Start a node with ID specified in NODE_ID env. var. -miner enables mining to <ADDRESS>
+
+### Initializing the Blockchain
+
+1. createwallet
+2. createblockchain with created address
+3. ready
