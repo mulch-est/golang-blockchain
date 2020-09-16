@@ -14,7 +14,7 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
  
  `send -from <FROM> -to <TO> -amount <AMOUNT> -mine` ~Sends <amount> of coins. Then -mine flag is set, mine off of this node
  
- `createwallet` ~Creates a new Wallet *Does not work unless tmp folder has been added manually*
+ `createwallet` ~Creates a new Wallet *(Does not work unless tmp folder has been added manually)*
  
  `listaddresses` ~Lists the addresses in our wallet file
  
