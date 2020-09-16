@@ -4,20 +4,20 @@ Run `go run main.go` to print commands, run `go build main.go` to build an execu
 
 ### Commands
 
-Usage: `go run main.go createblockchain -address <ADDRESS>`
+Usage: `go run main.go getbalance -address <ADDRESS>`
 
- getbalance -address <ADDRESS> ~gets the balance for an address
+ `getbalance -address <ADDRESS>` ~gets the balance for an address
  
- createblockchain -address <ADDRESS> ~creates a blockchain and sends genesis reward to address
+ `createblockchain -address <ADDRESS>` ~creates a blockchain and sends genesis reward to address
  
- printchain ~Prints the blocks in the chain
+ `printchain` ~Prints the blocks in the chain
  
- send -from <FROM> -to <TO> -amount <AMOUNT> -mine ~Sends <amount> of coins. Then -mine flag is set, mine off of this node
+ `send -from <FROM> -to <TO> -amount <AMOUNT> -mine` ~Sends <amount> of coins. Then -mine flag is set, mine off of this node
  
- createwallet ~Creates a new Wallet
+ `createwallet` ~Creates a new Wallet
  
- listaddresses ~Lists the addresses in our wallet file
+ `listaddresses` ~Lists the addresses in our wallet file
  
- reindexutxo ~Rebuilds the UTXO set
+ `reindexutxo` ~Rebuilds the UTXO set
  
- startnode -miner <ADDRESS> ~Start a node with ID specified in NODE_ID env. var. -miner enables mining to <ADDRESS>
+ `startnode -miner <ADDRESS>` ~Start a node with ID specified in NODE_ID env. var. -miner enables mining to <ADDRESS>
