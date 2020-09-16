@@ -14,7 +14,7 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
  
  `send -from <FROM> -to <TO> -amount <AMOUNT> -mine` ~Sends AMOUNT of coins from FROM to TO. Then -mine flag is set, mine off of this node
  
- `createwallet` ~Creates a new wallet *(Does not work unless tmp folder has been added manually)*
+ `createwallet` ~Creates a new wallet
  
  `listaddresses` ~Lists the addresses in our wallet file
  
@@ -25,7 +25,7 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 ### Initializing the Blockchain
 
 1. Create wallet  
-`go run main.go createwallet` *(Does not work unless tmp folder has been added manually)*
+`go run main.go createwallet`
 
 2. Create blockchain with genesis reward sent to created wallet  
 `go run main.go createblockchain -address <CREATED_ADDRESS>`
