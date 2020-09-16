@@ -167,8 +167,11 @@ func (cli *CommandLine) Run() {
 
 	nodeID := os.Getenv("NODE_ID")
 	if nodeID == "" {
-		fmt.Printf("NODE_ID env is not set!")
-		runtime.Goexit()
+		//fmt.Printf("NODE_ID env is not set!")
+		//runtime.Goexit()
+		
+		fmt.Println("env NODE_ID not found (set to 7000)")
+		os.Setenv("NODE_ID", "7000")
 	}
 
 	getBalanceCmd := flag.NewFlagSet("getbalance", flag.ExitOnError)
@@ -276,8 +279,11 @@ func (cli *CommandLine) Run() {
 	if startNodeCmd.Parsed() {
 		nodeID := os.Getenv("NODE_ID")
 		if nodeID == "" {
-			startNodeCmd.Usage()
-			runtime.Goexit()
+			//startNodeCmd.Usage()
+			//runtime.Goexit()
+			
+			fmt.Println("env NODE_ID not found (set to 7000)")
+			os.Setenv("NODE_ID", "7000")
 		}
 		cli.StartNode(nodeID, *startNodeMiner)
 	}
