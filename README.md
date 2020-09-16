@@ -25,7 +25,7 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 ### Initializing the Blockchain
 
 1. Create wallet  
-`go run main.go createwallet`
+`go run main.go createwallet` *(Does not work unless tmp folder has been added manually)*
 
 2. Create blockchain with genesis reward sent to created wallet  
 `go run main.go createblockchain -address <CREATED_ADDRESS>`
