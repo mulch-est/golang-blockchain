@@ -172,7 +172,7 @@ func (cli *CommandLine) Run() {
 		
 		fmt.Println("env NODE_ID not found (set to 7000)")
 		os.Setenv("NODE_ID", "7000")
-		nodeID = 7000
+		nodeID = "7000"
 	}
 
 	getBalanceCmd := flag.NewFlagSet("getbalance", flag.ExitOnError)
@@ -285,7 +285,7 @@ func (cli *CommandLine) Run() {
 			
 			fmt.Println("env NODE_ID not found (set to 7000)")
 			os.Setenv("NODE_ID", "7000")
-			nodeID = 7000
+			nodeID = "7000"
 		}
 		cli.StartNode(nodeID, *startNodeMiner)
 	}
