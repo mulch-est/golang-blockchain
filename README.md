@@ -2,7 +2,10 @@
 
 Run `go run main.go` to print commands, run `go build main.go` to build an executable file.
 
-#### Commands
+### Commands
+
+Usage: `go run main.go createblockchain -<address>`
+
  getbalance -address ADDRESS - get the balance for an address
  createblockchain -address ADDRESS creates a blockchain and sends genesis reward to address
  printchain - Prints the blocks in the chain
