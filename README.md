@@ -26,8 +26,12 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 
 1. Create wallet 
 `go run main.go createwallet`
+
 2. Create blockchain with all coins initially stored within created wallet 
 `go run main.go createblockchain -address <CREATED_ADDRESS>`
+
 3.  Check validity
+
 of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`
+
 of chain `go run main.go printchain`
