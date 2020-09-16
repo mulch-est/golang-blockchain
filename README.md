@@ -32,6 +32,6 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 
 3.  Check validity
 
-of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`
+  of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`
 
-of chain `go run main.go printchain`
+  of chain `go run main.go printchain`
