@@ -51,7 +51,13 @@ func (ws Wallets) GetWallet(address string) Wallet {
 func (ws *Wallets) LoadFile(nodeId string) error {
 	walletFile := fmt.Sprintf(walletFile, nodeId)
 	if _, err := os.Stat(walletFile); os.IsNotExist(err) {
-		return err
+		//return err
+		fmt.Println("./tmp not found, creating dir")
+		os.Mkdir("tmp", 0755)
+		if _, err := os.Stat(walletFile); os.IsNotExist(err) {
+			return err
+			//probably not optimal, idea was to make sure <tmp not found> was fixed
+		}
 	}
 
 	var wallets Wallets
