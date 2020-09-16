@@ -1,8 +1,9 @@
 # Golang Blockchain
 
-### Run `go run main.go` to run the app, run `go build main.go` to build an executable file.
+Run `go run main.go` to print commands, run `go build main.go` to build an executable file.
 
-getbalance -address ADDRESS - get the balance for an address
+#### Commands
+ getbalance -address ADDRESS - get the balance for an address
  createblockchain -address ADDRESS creates a blockchain and sends genesis reward to address
  printchain - Prints the blocks in the chain
  send -from FROM -to TO -amount AMOUNT -mine - Send amount of coins. Then -mine flag is set, mine off of this node
