@@ -33,3 +33,11 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 3.  Check validity  
 of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`  
 of chain `go run main.go printchain`
+
+## Limitations
+
+1. Not truly decentralized, one node is set as the centralized node.
+
+2. When a block download attempt is made, the entire blockchain is downloaded.
+
+3. When a send attempt is made, the program checks valid wallets from local memory (inside the node).
