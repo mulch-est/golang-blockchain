@@ -34,6 +34,8 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`  
 of chain `go run main.go printchain`
 
+If you received the error "NODE_ID env is not set!", the command `set NODE_ID=<node-id>` worked on windows using (cmder)[https://github.com/cmderdev/cmder].
+
 ## Limitations
 
 1. Not truly decentralized, one node is set as the centralized node.
