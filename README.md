@@ -24,17 +24,17 @@ Usage: `go run main.go getbalance -address <ADDRESS>`
 
 ### Initializing the Blockchain
 
-1. Create wallet  
+1. Create wallet<br>
 `go run main.go createwallet`
 
-2. Create blockchain with genesis reward sent to created wallet  
+2. Create blockchain with genesis reward sent to created wallet<br>
 `go run main.go createblockchain -address <CREATED_ADDRESS>`
 
-3.  Check validity  
-of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`  
+3.  Check validity<br>
+of address `go run main.go listaddresses` OR `go run main.go getbalance -address <CREATED_ADDRESS>`<br>
 of chain `go run main.go printchain`
 
-If you received the error "NODE_ID env is not set!", the command `set NODE_ID=<node-id>` worked on windows using [cmder](https://github.com/cmderdev/cmder).
+If you received the error **NODE_ID env is not set!**, it can be fixed using the command `set NODE_ID=<node-id>` on Windows using [cmder](https://github.com/cmderdev/cmder).
 
 ## Limitations
 
